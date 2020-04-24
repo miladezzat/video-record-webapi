@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>Video Record</title>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/flaticon.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.ico" />
 </head>
 
@@ -14,16 +15,29 @@
         <h1>Video Record By JavaScript</h1>
     </header>
     <section class="controller">
-        <button id="btnStart">START RECORDING</button>
-        <button id="btnStop">STOP RECORDING</button>
+        <button id="activeVideo" class="active">
+            <i class="flaticon-video-camera"></i>
+            <span>Video</span> 
+        </button>
+        <button id="activeCamera">
+            <i class="flaticon-camera"></i>
+           <span>Camera Video</span> 
+        </button>
     </section>
-    <section class="videos">
-        <img src="./assets/video.jpg" alt="img" id="img" />
-        <video id="vid1"></video>
-        <video id="vid2" controls></video>
+    <section id="videoSection">
+        <section class="controller">
+            <button id="btnStart">START RECORDING</button>
+            <button id="btnStop">STOP RECORDING</button>
+        </section>
+        <section class="videos">
+            <img src="./assets/video.jpg" alt="img" id="img" />
+            <video id="vid1"></video>
+            <video id="vid2" controls></video>
+        </section>
     </section>
+    <section id="cameraSection"></section>
 
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

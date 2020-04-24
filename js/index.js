@@ -94,3 +94,23 @@ navigator.mediaDevices.getUserMedia(constraintObj)
     .catch(function(err) {
         console.log(err.name, err.message);
     });
+
+
+
+const activeVideo = document.getElementById("activeVideo")
+const activeCamera = document.getElementById("activeCamera")
+const videoSection = document.getElementById("videoSection")
+const cameraSection = document.getElementById("cameraSection")
+
+activeVideo.addEventListener("click", () => {
+    cameraSection.style.display = "none";
+    videoSection.style.display = "block"
+    activeVideo.setAttribute("class", "active")
+    activeCamera.classList.remove("active")
+})
+activeCamera.addEventListener("click", () => {
+    cameraSection.style.display = "block";
+    videoSection.style.display = "none";
+    activeVideo.classList.remove("active")
+    activeCamera.setAttribute("class", "active")
+})

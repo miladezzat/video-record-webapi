@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("./assets/background.jpg");
+    background-image: url("../assets/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,6 +22,10 @@ h1 {
     padding-bottom: 20px;
     text-align: center;
     color: aliceblue;
+}
+
+#videoSection {
+    background-color: transparent;
 }
 
 .controller {
@@ -46,12 +50,18 @@ h1 {
     color: #2419be;
 }
 
+.active {
+    border: 1px solid #2419be!important;
+    background-color: #ffffff!important;
+    color: #2419be!important;
+}
+
 .videos {
     margin: auto;
     text-align: center;
 }
 
-img {
+#img {
     background-color: #123456;
     width: 20%;
 }
@@ -79,7 +89,7 @@ img {
         display: none;
         width: 95%;
     }
-    img {
+    #img {
         width: 50%;
     }
 }
