@@ -1,5 +1,5 @@
 let constraintObj = {
-    audio: false,
+    audio: true,
     video: {
         facingMode: "user",
         width: {
