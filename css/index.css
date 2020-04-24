@@ -29,7 +29,7 @@ h1 {
 }
 
 .controller {
-    padding: 30px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -77,6 +77,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    #cameraSection canvas,
+    #cameraSection #photo {
+        width: 40%;
+    }
     button {
         width: 80%;
         margin: 1%;
@@ -92,4 +96,16 @@ h1 {
     #img {
         width: 50%;
     }
+}
+
+#cameraSection {
+    display: none;
+    text-align: center;
+    ;
+}
+
+#cameraSection video,
+#cameraSection canvas,
+#cameraSection div {
+    display: inline;
 }

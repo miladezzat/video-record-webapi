@@ -35,9 +35,23 @@
             <video id="vid2" controls></video>
         </section>
     </section>
-    <section id="cameraSection"></section>
+    <section id="cameraSection">
+        <div class="video-wrap">
+            <video playsinline autoplay id="photo">            
+            </video>
+        </div>
+        <div>
+            <canvas id="canvas" width="300" height="300"></canvas>
+        </div>
+        <hr>
+        <button id="snap">Capture</button>
+        <a id="download">
+            <button type="button" onClick="download()">Download</button>
+        </a>
+    </section>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/photo.js"></script>
 </body>
 
 </html>

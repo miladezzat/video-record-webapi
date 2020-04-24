@@ -101,16 +101,20 @@ const activeVideo = document.getElementById("activeVideo")
 const activeCamera = document.getElementById("activeCamera")
 const videoSection = document.getElementById("videoSection")
 const cameraSection = document.getElementById("cameraSection")
+let closeVideo = document.getElementById("vid1")
 
 activeVideo.addEventListener("click", () => {
     cameraSection.style.display = "none";
     videoSection.style.display = "block"
     activeVideo.setAttribute("class", "active")
     activeCamera.classList.remove("active")
+    closeVideo.play()
 })
 activeCamera.addEventListener("click", () => {
     cameraSection.style.display = "block";
     videoSection.style.display = "none";
     activeVideo.classList.remove("active")
-    activeCamera.setAttribute("class", "active")
+    activeCamera.setAttribute("class", "active");
+    closeVideo.pause()
+
 })
